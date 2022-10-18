@@ -1,0 +1,22 @@
+Source: ruby-bacon
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Youhei SASAKI <uwabami@gfd-dennou.org>
+Build-Depends: debhelper (>= 11~),
+               gem2deb
+Standards-Version: 4.3.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-bacon.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-bacon
+Homepage: https://github.com/chneukirchen/bacon
+XS-Ruby-Versions: all
+
+Package: ruby-bacon
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Small RSpec clone
+ Bacon is a small RSpec clone weighing less than 350 line of code, but
+ nevertheless providing all essential features.

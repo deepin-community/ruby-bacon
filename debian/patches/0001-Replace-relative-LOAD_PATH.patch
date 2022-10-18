@@ -1,0 +1,32 @@
+From: Youhei SASAKI <uwabami@gfd-dennou.org>
+Date: Mon, 4 Sep 2017 00:52:20 +0900
+Subject: Replace relative LOAD_PATH
+
+Signed-off-by: Youhei SASAKI <uwabami@gfd-dennou.org>
+---
+ test/spec_bacon.rb  | 4 +---
+ test/spec_should.rb | 2 +-
+ 2 files changed, 2 insertions(+), 4 deletions(-)
+
+diff --git a/test/spec_bacon.rb b/test/spec_bacon.rb
+index c14a180..923eb70 100644
+--- a/test/spec_bacon.rb
++++ b/test/spec_bacon.rb
+@@ -1,6 +1,4 @@
+-$-w,w = nil, $-w
+-require File.expand_path('../../lib/bacon', __FILE__)
+-$-w = w
++require 'bacon'
+ 
+ # Hooray for meta-testing.
+ module MetaTests
+diff --git a/test/spec_should.rb b/test/spec_should.rb
+index 4986aa2..48ac459 100644
+--- a/test/spec_should.rb
++++ b/test/spec_should.rb
+@@ -1,4 +1,4 @@
+-require File.expand_path('../../lib/bacon', __FILE__)
++require 'bacon'
+ 
+ describe "#should shortcut for #it('should')" do
+   

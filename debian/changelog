@@ -1,0 +1,89 @@
+ruby-bacon (1.2.0-6.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 03:30:20 +0100
+
+ruby-bacon (1.2.0-6) unstable; urgency=medium
+
+  * d/control: Bump Standard Version 4.3.0
+  * d/{control,compat}: Bump compat 11
+  * d/control: Update Vcs-{Git,Browser}. use salsa
+  * d/copyright: fix insecure-copyright-format-uri
+  * d/watch: use gemwatch
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Mon, 24 Dec 2018 18:13:42 +0900
+
+ruby-bacon (1.2.0-5) unstable; urgency=medium
+
+  [ Cédric Boutillier ]
+  * Bump debhelper compatibility level to 9
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+
+  [ Youhei SASAKI ]
+  * Bump debhelper >= 10
+  * Bump Standard Version: 4.0.0
+  * Update tests for autopkgtest (Closes: #830061)
+  * Add patch: Remove git ls-files from gemspec
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Mon, 04 Sep 2017 01:04:14 +0900
+
+ruby-bacon (1.2.0-4) unstable; urgency=medium
+
+  * Team upload.
+  * Rebuild against gem2deb (>= 0.7.0~) to install gemspec in shared location
+    for all Ruby versions.
+  * debian/ruby-tests.rb: run tests against Ruby interpreter being tested
+    (Closes: #747728)
+
+ -- Antonio Terceiro <terceiro@debian.org>  Mon, 12 May 2014 11:25:02 -0300
+
+ruby-bacon (1.2.0-3) unstable; urgency=low
+
+  * Team upload
+  * debian/control:
+    + drop Conflicts: ruby-rspec-core
+    + bump Standards-Version to 3.9.4 (no changes needed)
+    + update Homepage field
+  * debian/rules:
+    + do not install autotest files
+    + install upstream changelog
+
+ -- Cédric Boutillier <boutil@debian.org>  Wed, 19 Jun 2013 18:00:55 +0200
+
+ruby-bacon (1.2.0-2) unstable; urgency=low
+
+  [ Cédric Boutillier ]
+  * debian/control: remove obsolete DM-Upload-Allowed flag
+  * use canonical URI in Vcs-* fields
+  * debian/copyright: use DEP5 copyright-format/1.0 official URL for Format field
+
+  [ Ondřej Surý ]
+  * Upload to unstable
+  * Debian Ruby Extras Maintainers upload.
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon, 27 May 2013 10:21:17 +0200
+
+ruby-bacon (1.2.0-1) experimental; urgency=low
+
+  * Imported Upstream version 1.2.0
+  * Bump Standard Version: 3.9.3
+  * Update debian/copyright: Bump copyright year
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Mon, 07 Jan 2013 22:01:28 +0900
+
+ruby-bacon (1.1.0-2) unstable; urgency=low
+
+  * fix description
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Sat, 22 Oct 2011 13:45:00 +0900
+
+ruby-bacon (1.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #635394)
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Tue, 26 Jul 2011 01:00:37 +0900

@@ -1,0 +1,22 @@
+From: Youhei SASAKI <uwabami@gfd-dennou.org>
+Date: Mon, 4 Sep 2017 00:57:42 +0900
+Subject: Remove git ls-files from gemspec
+
+Signed-off-by: Youhei SASAKI <uwabami@gfd-dennou.org>
+---
+ bacon.gemspec | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/bacon.gemspec b/bacon.gemspec
+index 6455e08..06ef49e 100644
+--- a/bacon.gemspec
++++ b/bacon.gemspec
+@@ -11,7 +11,7 @@ nevertheless providing all essential features.
+ http://github.com/chneukirchen/bacon
+   EOF
+ 
+-  s.files           = `git ls-files`.split("\n") - [".gitignore"] + %w(RDOX ChangeLog)
++  s.files           = [".travis.yml","COPYING","ChangeLog","RDOX","README.rdoc","Rakefile","bacon.gemspec","bin/bacon","lib/autotest/bacon.rb","lib/autotest/bacon_rspec.rb","lib/autotest/discover.rb","lib/bacon.rb","metadata.yml","test/spec_bacon.rb","test/spec_nontrue.rb","test/spec_should.rb"]
+   s.bindir          = 'bin'
+   s.executables     << 'bacon'
+   s.require_path    = 'lib'
